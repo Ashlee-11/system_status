@@ -5,10 +5,12 @@ With the use of these four functions one could get the following information:
 2) getMemFree(): returns amount of the free memory in megabytes, returned value is an integer.
 3) getCpuCount(): returns total amount of CPU cores.
 4) getCpuUsage(): returns value from 0 to 100 that indicates average CPU utilization by all cores of all processors.
+
 To use these functions one has to start the service and the after usage the service should be stopped. Service's start() function returns a promise which should be handled.
 
-// Create a system monitor which would indicate the service and help give us system information.
-const monitor = new SystemStatus();
+*USAGE:*
+
+const monitor = new SystemStatus(); // Create a system monitor which would indicate the service.
 
 await monitor.start().then(() => {
   const totalMemory = monitor.getMemTotal();
