@@ -1,4 +1,4 @@
-export { SystemHealthMonitor } from "./../System_Status.ts";
+export { SystemStatus } from "./../mod.ts";
 
 //Standard Library Dependencies
 export {
